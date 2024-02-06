@@ -1,0 +1,10 @@
+name: demo
+on: push
+jobs:
+  action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Log
+        run: echo This action runs in all repos
