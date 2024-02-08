@@ -1,6 +1,6 @@
-name: 🚀 Feature Request
+name: 💡 Feature Request
 description: Create a feature request
-labels: ['enhancement', '⏳ pending triage']
+labels: ['enhancement', 'pending triage']
 body:
   - type: markdown
     attributes:
@@ -11,7 +11,7 @@ body:
     attributes:
       label: Problem
       description: Please describe the problem this feature would address as clearly and concisely as possible.
-      placeholder: <As a user, I want...>
+      placeholder: As a user, I want...
     validations:
       required: true
   - type: textarea
@@ -19,6 +19,7 @@ body:
     attributes:
       label: Solution
       description: Propose a solution to the problem you've identified, including possible use cases and alternative solutions you've considered.
+      placeholder: We can solve this problem by...
     validations:
       required: true
   - type: textarea
