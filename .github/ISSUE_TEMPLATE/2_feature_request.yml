@@ -1,39 +1,35 @@
-name: 🛠 Feature Request
-description: Create a feature request for the core packages
-title: 'feat: '
-labels: ['✨ enhancement']
+name: 🚀 Feature Request
+description: Create a feature request
+labels: ['🚀 enhancement', '⏳ pending triage']
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to file a feature request. Please fill out this form as completely as possible.
+        Thanks for taking the time to request this feature!
   - type: textarea
+    id: problem
     attributes:
-      label: Describe the feature you'd like to request
-      description: Please describe the feature as clear and concise as possible. Remember to add context as to why you believe this feature is needed.
+      label: Problem
+      description: Please describe the problem this feature would address as clearly and concisely as possible.
+      placeholder: <As a user, I want...>
     validations:
       required: true
   - type: textarea
+    id: solution
     attributes:
-      label: Describe the solution you'd like to see
-      description: Please describe the solution you would like to see. Adding example usage is a good way to provide context.
+      label: Solution
+      description: Propose a solution to the problem you've identified, including possible use cases and alternative solutions you've considered.
     validations:
       required: true
   - type: textarea
-    attributes:
-      label: Describe alternate solutions
-      description: |
-        Please describe alternate solutions you have considered. What makes your suggested feature better?
-        If you currently have a workaround to get a similar experience, add that here.
-    validations:
-      required: true
-  - type: textarea
+    id: additional-info
     attributes:
       label: Additional information
-      description: Add any other information related to the feature here. If your feature request is related to any issues or discussions, link them here.
+      description: Share any other relevant context about the feature you're proposing.
   - type: checkboxes
+    id: contributing
     attributes:
       label: 👨‍👧‍👦 Contributing
-      description: We love contributors in any shape or form. Would you be willing to implement this feature?
+      description: We welcome contributions from the open-source community! Are you interested in working on this issue?
       options:
-        - label: 🙋‍♂️ Yes, I'd be down to file a PR implementing this feature!
+        - label: 🙋‍♂️ Yes, I'd love to make a PR to implement this feature!
