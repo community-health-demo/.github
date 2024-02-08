@@ -1,17 +1,23 @@
- All Submissions:
+<!---
+☝️ Prefix your PR title with `fix:`, `feat:`, `docs:`, or other according to the [Conventional Commits spec](https://conventionalcommits.org)
+-->
 
-* [ ] Have you followed the guidelines in our Contributing document?
-* [ ] Have you checked to ensure there aren't other open [Pull Requests](../../../pulls) for the same update/change?
+## 🔗 Linked issue
 
-<!-- You can erase any parts of this template not applicable to your Pull Request. -->
+ <!-- Resolves #123 -->
 
-### New Feature Submissions:
+## Description
 
-1. [ ] Does your submission pass tests?
-2. [ ] Have you lint your code locally before submission?
+<!-- Describe your changes in detail. Why is this change required? What problem does it solve? -->
 
-### Changes to Core Features:
+## Checklist
 
-* [ ] Have you added an explanation of what your changes do and why you'd like us to include them?
-* [ ] Have you written new tests for your core changes, as applicable?
-* [ ] Have you successfully run tests with your changes locally?
+<!-- Put an `x` in all the boxes that apply. -->
+<!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+
+- [ ] I've followed the [Contributing guidelines](../../.github/CONTRIBUTING.md)
+- [ ] I've titled my PR according to the [Conventional Commits spec](https://conventionalcommits.org)
+- [ ] I've linked an open issue
+- [ ] I've added tests that fail without this PR but pass with it
+- [ ] I've linted and tested my code
+- [ ] I've updated documentation (if appropriate)
