@@ -15,7 +15,7 @@
 <!-- Put an `x` in all the boxes that apply. -->
 <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
-- [ ] I've followed the [Contributing guidelines](../../.github/CONTRIBUTING.md)
+- [ ] I've followed the [Contributing guidelines](../../.github/blob/main/CONTRIBUTING.md)
 - [ ] I've titled my PR according to the [Conventional Commits spec](https://conventionalcommits.org)
 - [ ] I've linked an open issue
 - [ ] I've added tests that fail without this PR but pass with it
