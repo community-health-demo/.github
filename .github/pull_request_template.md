@@ -2,7 +2,7 @@
 ☝️ Prefix your PR title with `fix:`, `feat:`, `docs:`, or other according to the Conventional Commits spec:
 https://conventionalcommits.org
 
-Make sure to follow our Contributing guidelines:
+👉 Please make sure to follow our Contributing guidelines:
 https://github.com/community-health-demo/.github/blob/main/CONTRIBUTING.md
 -->
 
