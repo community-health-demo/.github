@@ -12,7 +12,7 @@ body:
     attributes:
       label: Description
       description: Please describe the bug as clearly and concisely as possible.
-    placeholder: <Bug description>
+      placeholder: <Bug description>
     validations:
       required: true
   - type: textarea
