@@ -1,6 +1,6 @@
 name: 🚀 Feature Request
 description: Create a feature request
-labels: ['🚀 enhancement', '⏳ pending triage']
+labels: ['enhancement', '⏳ pending triage']
 body:
   - type: markdown
     attributes:

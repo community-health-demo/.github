@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Create a bug report
-labels: ['🐛 bug', '⏳ pending triage']
+labels: ['bug', '⏳ pending triage']
 body:
   - type: markdown
     attributes:
