@@ -1,54 +1,52 @@
 name: 🐞 Bug Report
-description: Create a bug report for the core packages
-title: 'bug: '
-labels: ['🐛 bug: unconfirmed']
+description: Create a bug report
+title: 'bug: <title>'
+labels: ['🐛 bug', '⏳ pending triage']
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to file a bug report! Please fill out this form as completely as possible.
-        Note that the more precise you are, the quicker we will be able to investigate the bug.
+        Thanks for taking the time to file a bug report!
   - type: textarea
+    id: description
     attributes:
-      label: Provide environment information
+      label: Description
+      description: Please describe the bug as clearly and concisely as possible.
+    placeholder: <Bug description>
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Please provide a link to a reproduction of the bug (repo / REPL / CodeSandbox / etc) and describe how to reproduce the bug. If we can't reproduce the bug, we can't fix it - so make sure to provide as much detail as possible! ([Read more about minimal reproducible examples](https://stackoverflow.com/help/minimal-reproducible-example))
+      placeholder: |
+        <Link>
+        <Reproduction steps>
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System information
       description: |
-        Run this command in your project root and paste the results:
+        Provide information about your system, binaries, browsers, and relevant NPM packages - you can run this command in your project root and paste the results:
 
         ```terminal
-        npx envinfo --system --binaries --browsers --npmPackages "typescript,next,react,@trpc/server,@trpc/client,@trpc/react,@trpc/react-query,@trpc/client,@trpc/next,@tanstack/react-query"
+        npx envinfo --system --binaries --browsers --npmPackages "<relevant-package1, relevant-package2, ...>"
         ```
       placeholder: |
-        ``` 
-        <Paste result here> 
-        ```
+        <System, binaries, browsers, relevant packages>
     validations:
       required: true
   - type: textarea
-    attributes:
-      label: Describe the bug
-      description: Please describe the bug as clear and concise as possible, as well as the behavior you were expecting whilst encountering the bug.
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Link to reproduction
-      description: Please provide a link to a reproduction of the bug. This can be a link to a repository or a StackBlitz/CodeSandbox etc. Feel free to use our minimal reproduction template https://stackblitz.com/github/trpc/examples-next-minimal-starter
-      placeholder: https://stackblitz.com/github/trpc/examples-next-minimal-starter
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: To reproduce
-      description: Describe how to reproduce your bug. Can be either code or a link to a reproduction repo, StackBlitz etc.
-    validations:
-      required: true
-  - type: textarea
+    id: additional-info
     attributes:
       label: Additional information
-      description: Add any other information related to the bug here.
+      description: Provide any other relevant context about the issue you're encountering.
   - type: checkboxes
     attributes:
       label: 👨‍👧‍👦 Contributing
-      description: We love contributors in any shape or form. Would you be willing to implement a fix?
+      description: We welcome contributions from the open-source community! Are you interested in working on this issue?
       options:
-        - label: 🙋‍♂️ Yes, I'd be down to file a PR fixing this bug!
+        - label: 🙋‍♂️ Yes, I'd love to make a PR to fix this bug!
