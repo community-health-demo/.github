@@ -44,6 +44,7 @@ body:
       label: Additional information
       description: Share any other relevant context about the issue you're encountering.
   - type: checkboxes
+    id: contributing
     attributes:
       label: 👨‍👧‍👦 Contributing
       description: We welcome contributions from the open-source community! Are you interested in working on this issue?
